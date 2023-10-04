@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+
+body{
+  background-color: rgb(239, 194, 209);
+}
+  h1 {
+    text-align: center;
+    color: white;  
+    font-family: Gabarito;  
+  }
+  h1:hover{
+    color: black;
+  }
+  h5 {
+    text-align: center;
+    color: white;
+    font-family: Gabarito; 
+  }
+  #quote {
+    text-align: center;
+    width: 25%;
+    color: white;
+    margin: 0% auto;
+    font-size: small;
+  }
+  #gospel {
+    width: 25%;
+    margin: 0px auto;
+    padding: 10px;  
+    line-height: 1.5em;  
+    font-family: Gabarito; 
+  }
+  img {
+      width: 10%;
+      display: block;
+      margin: 0 auto;     
+  }
+  .main-para {
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 15%;
+    text-align: center;
+    padding: 10px;  
+    color: white;
+  }
+  footer{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: small;
+    font-family: Gabarito;
+  }
