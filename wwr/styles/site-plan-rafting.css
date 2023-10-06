@@ -7,8 +7,8 @@ Fonts are separated by a & */
   /* change the values below to your colors from your palette */
   --primary-color: #3a5ba3   ;
   --secondary-color: #bac7e0 ;
-  --accent1-color: #7d7461;
-  --accent2-color: #ffffff;
+  --accent1-color: #B8B2A3;
+  --accent2-color: #210F04;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Rock Salt;
@@ -20,10 +20,10 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #3a5ba3; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #3a5ba3  ;
-  --nav-link-color: #3a5ba3;
-  --nav-background-color: #bac7e0 ;
-  --nav-hover-link-color: #ffffff;
-  --nav-hover-background-color: #3a5ba3;
+  --nav-link-color: #B8B2A3;
+  --nav-background-color: #210F04 ;
+  --nav-hover-link-color: #210F04;
+  --nav-hover-background-color: #B8B2A3;
 }
 
 
