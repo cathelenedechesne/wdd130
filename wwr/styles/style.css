@@ -2,10 +2,6 @@ body{
 background-color:#B8B2A3;
 }
 
-#hero {
-    text-align: center;
-}
-
 #hero-img{
     width: 100%;
 } 
@@ -28,7 +24,7 @@ header{
     background-color:#210F04;    
 }
 
-nav, a {
+nav a {
     color: #B8B2A3;
     text-align: center;
     text-decoration: none
