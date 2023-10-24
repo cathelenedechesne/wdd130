@@ -63,7 +63,7 @@ nav {
 }
    
 nav a {
-    font-family: Work Sans, Arial, sans-serif;
+    font-family: "Work Sans", Arial, sans-serif;
     color: #B8B2A3;
     text-align: center;
     text-decoration: none;
@@ -76,21 +76,21 @@ nav a:hover{
 }    
 
 .home-grid{
-    font-family: Rock Salt, Bradley Hand, sans-serif;
+    font-family: "Rock Salt", "Bradley Hand", sans-serif;
     display: grid;
     grid-template-columns: repeat(10, 1fr)
 }
 
 .home-title{
     color: #ffffff;
-    font-family: Rock Salt, Bradley Hand, sans-serif;
+    font-family: "Rock Salt", "Bradley Hand", sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
 
 h4{
-    color: #210F04;
-    font-family: Work Sans, Arial, sans-serif;
+    color: #ffffff;
+    font-family: "Work Sans", Arial, sans-serif;
 }
 
 h2{
@@ -120,7 +120,7 @@ main section img{
 .book, .join{
     background-color:#bac7e0;
     color:#3a5ba3;
-    font-family: Rock Salt, Bradley Hand, sans-serif;
+    font-family: "Rock Salt", "Bradley Hand", sans-serif;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
@@ -187,18 +187,18 @@ main section img{
 
 .msg h2{
     color: #bac7e0;
-    font-family: Rock Salt, Bradley Hand, sans-serif;
+    font-family: "Rock Salt", "Bradley Hand", sans-serif;
 }
 .msg p{
     color: #bac7e0;
-    font-family: Work Sans, Arial, sans-serif;
+    font-family: "Work Sans", Arial, sans-serif;
     font-size: .8em;
     padding-bottom: 15px;
 }
 footer{
     background-color:#bac7e0;
     color: #3a5ba3;
-    font-family: Work Sans, Arial, sans-serif;
+    font-family: "Work Sans", Arial, sans-serif;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
