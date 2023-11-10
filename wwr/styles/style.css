@@ -13,15 +13,31 @@ padding: 0;
     margin-top: -100px;     
 }
 
+#rivers_hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;     
+}
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
-      
+
+#rivers_hero-box{  
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    margin-bottom: 180px;
+    }       
+
 #hero-img{
     width: 100%;
 } 
+
+#rivers_hero-img{
+    width: 100%;
+}
 
 #hero-msg{
     grid-column: 2/3;
@@ -81,7 +97,105 @@ nav a:hover{
     grid-template-columns: repeat(10, 1fr)
 }
 
+.rivers-grid{
+    font-family: "Rock Salt", "Bradley Hand", sans-serif;    
+}
+
+
+.salmon-card{
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);   
+    grid-template-rows: .1fr 1fr; 
+    width: 100%;    
+    grid-row: 1/2;
+    grid-column: 2/10;    
+    margin-bottom: 50px;
+    .salmon-img{
+        grid-column: 7/10;
+        grid-row: 2/3;     
+        margin-top: 90px;  
+        border: 10px solid #210F04;
+        box-shadow: 5px 5px 10px #6f7364;
+                  
+    }
+    .salmon-h2{
+        grid-column: 2/6;
+        grid-row: 1/2;
+        height: fit-content;
+        text-align: left;
+    }
+    .salmon-p{
+        grid-row: 2/3;
+        grid-column: 2/6;
+        font-family: "Work Sans", Arial, sans-serif;
+        text-align: left;
+    }
+}
+
+.utah-card{
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);   
+    grid-template-rows: .1fr 1fr; 
+    width: 100%;    
+    grid-row: 1/2;
+    grid-column: 2/10;   
+    margin-bottom: 50px; 
+    .utah-img{
+        grid-column: 2/6;
+        grid-row: 2/3;     
+        margin-top: 60px;    
+        border: 10px solid #210F04;
+        box-shadow: 5px 5px 10px #6f7364;
+    }
+    .utah-h2{
+        grid-column: 7/10;
+        grid-row: 1/2;
+        height: fit-content;
+        text-align: left;
+    }
+    .utah-p{
+        grid-row: 2/3;
+        grid-column: 7/10;
+        font-family: "Work Sans", Arial, sans-serif;
+        text-align: left;
+    }
+}
+
+.canyon-card{
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);   
+    grid-template-rows: .1fr 1fr; 
+    width: 100%;    
+    grid-row: 1/2;
+    grid-column: 2/10;    
+    .canyon-img{
+        grid-column: 7/10;
+        grid-row: 2/3;             
+        border: 10px solid #210F04;
+        box-shadow: 5px 5px 10px #6f7364;
+    }
+    .canyon-h2{
+        grid-column: 2/6;
+        grid-row: 1/2;
+        height: fit-content;
+        text-align: left;
+    }
+    .canyon-p{
+        grid-row: 2/3;
+        grid-column: 2/6;
+        font-family: "Work Sans", Arial, sans-serif;
+        text-align: left;
+    }
+}
+
 .home-title{
+    color: #ffffff;
+    font-family: "Rock Salt", "Bradley Hand", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-title{
     color: #ffffff;
     font-family: "Rock Salt", "Bradley Hand", sans-serif;
     font-size: 2em;
@@ -229,7 +343,7 @@ footer .social img{
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, #rivers_hero, .home-grid {
         display: block;
         height: auto;
     }
@@ -240,7 +354,7 @@ footer .social img{
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #rivers_hero {
         margin-top: 0;
     }
     #hero-msg {
@@ -249,7 +363,7 @@ footer .social img{
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
+    .home-title, .rivers-title {
         font-size: 25px;
         color: #6f7364;
     }
