@@ -2,6 +2,7 @@
 
 body{
 background-color:#B8B2A3;
+font-family: "Work Sans", Arial, sans-serif;
 font-size: 22px;
 margin: 0;
 padding: 0;
@@ -78,8 +79,7 @@ nav {
     justify-content: space-around;
 }
    
-nav a {
-    font-family: "Work Sans", Arial, sans-serif;
+nav a {    
     color: #B8B2A3;
     text-align: center;
     text-decoration: none;
@@ -97,96 +97,84 @@ nav a:hover{
     grid-template-columns: repeat(10, 1fr)
 }
 
-.rivers-grid{
-    font-family: "Rock Salt", "Bradley Hand", sans-serif;    
-}
-
-
-.salmon-card{
-    display: grid; 
-    grid-template-columns: repeat(10, 1fr);   
-    grid-template-rows: .1fr 1fr; 
-    width: 100%;    
-    grid-row: 1/2;
-    grid-column: 2/10;    
+.salmon-card {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     margin-bottom: 50px;
+    gap: 0 2em;}
+
     .salmon-img{
-        grid-column: 7/10;
-        grid-row: 2/3;     
-        margin-top: 90px;  
-        border: 10px solid #210F04;
-        box-shadow: 5px 5px 10px #6f7364;
-                  
+    grid-column: 6/10;
+    grid-row: 2/5;
+    border: 10px solid #210F04;
+    box-shadow: 5px 5px 10px #6f7364;
+    width:  100%;
     }
-    .salmon-h2{
-        grid-column: 2/6;
+    .salmon-h2 {
+        font-family: "Rock Salt", "Bradley Hand", sans-serif;  
+        grid-column: 2/10;
         grid-row: 1/2;
-        height: fit-content;
-        text-align: left;
+        padding: 2em 0;
     }
-    .salmon-p{
-        grid-row: 2/3;
-        grid-column: 2/6;
-        font-family: "Work Sans", Arial, sans-serif;
+    .salmon-p {
+        grid-row: 2/5;
+        grid-column: 2/6;       
         text-align: left;
+        margin: 0%
     }
-}
+
 
 .utah-card{
-    display: grid; 
-    grid-template-columns: repeat(10, 1fr);   
-    grid-template-rows: .1fr 1fr; 
-    width: 100%;    
-    grid-row: 1/2;
-    grid-column: 2/10;   
-    margin-bottom: 50px; 
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 50px;
+    gap: 0 2em;}
+
     .utah-img{
         grid-column: 2/6;
-        grid-row: 2/3;     
-        margin-top: 60px;    
+        grid-row: 2/5;
         border: 10px solid #210F04;
         box-shadow: 5px 5px 10px #6f7364;
+        width:  100%;
     }
     .utah-h2{
-        grid-column: 7/10;
+        font-family: "Rock Salt", "Bradley Hand", sans-serif;  
+        grid-column: 2/10;
         grid-row: 1/2;
-        height: fit-content;
-        text-align: left;
+        padding: 2em 0;       
     }
     .utah-p{
-        grid-row: 2/3;
-        grid-column: 7/10;
-        font-family: "Work Sans", Arial, sans-serif;
+        grid-row: 2/5;
+        grid-column:6/10;        
         text-align: left;
+        margin: 0%
     }
-}
 
 .canyon-card{
-    display: grid; 
-    grid-template-columns: repeat(10, 1fr);   
-    grid-template-rows: .1fr 1fr; 
-    width: 100%;    
-    grid-row: 1/2;
-    grid-column: 2/10;    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 50px;
+    gap: 0 2em; }
     .canyon-img{
-        grid-column: 7/10;
-        grid-row: 2/3;             
+        grid-column: 6/10;
+        grid-row: 2/5;
         border: 10px solid #210F04;
         box-shadow: 5px 5px 10px #6f7364;
+        width:  100%;
     }
     .canyon-h2{
-        grid-column: 2/6;
+        font-family: "Rock Salt", "Bradley Hand", sans-serif;  
+        grid-column: 2/10;
         grid-row: 1/2;
-        height: fit-content;
-        text-align: left;
+        padding: 2em 0;
     }
     .canyon-p{
-        grid-row: 2/3;
-        grid-column: 2/6;
-        font-family: "Work Sans", Arial, sans-serif;
+        grid-row: 2/5;
+        grid-column: 2/6;        
         text-align: left;
+        margin: 0%
     }
-}
+
 
 .home-title{
     color: #ffffff;
@@ -203,8 +191,7 @@ nav a:hover{
 }
 
 h4{
-    color: #ffffff;
-    font-family: "Work Sans", Arial, sans-serif;
+    color: #ffffff;    
 }
 
 h2{
@@ -305,14 +292,12 @@ main section img{
 }
 .msg p{
     color: #bac7e0;
-    font-family: "Work Sans", Arial, sans-serif;
     font-size: .8em;
     padding-bottom: 15px;
 }
 footer{
     background-color:#bac7e0;
-    color: #3a5ba3;
-    font-family: "Work Sans", Arial, sans-serif;
+    color: #3a5ba3;    
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
