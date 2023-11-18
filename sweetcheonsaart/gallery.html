@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Sweet Cheonsa Art | Gallery</title>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/angel_logo.png" alt="Sweet Cheonsa Art Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="aboutme.html">About Me</a>
+            </nav>
+        </header>
+        <main>
+            <div class="originals">
+                <h1>Original Artwork</h1>
+                <br>
+                <img src="images/cherry.jpg" alt="red cherry on green background"
+                    onclick="openModal('images/cherry.jpg', 'Cherry(A6)-2023', 'Cherry on a green background, drawn with colour pencils.<br>The purpose was to showcase the complementary colours red and green.<br>This drawing was made during the 20 to 1 Art Challenge hosted by the Sydney based artist Ros Gervay. The theme was “Complementary”.')">
+                <br>
+                <h4>Cherry(A6)-2023</h4>
+
+                <img src="images/black_and_white.jpg" alt="resting face on black background"
+                    onclick="openModal('images/black_and_white.jpg', 'Resting face(A4)-2023', 'Drawn on blacker paper with white colour pencil and while pastel.<br> This was also created during the art challenge hosted by Ros Gervay.<br> The theme was “Black and White”')">
+                <br>
+                <h4>Resting face(A4)-2023</h4>
+
+                <img src="images/color_splash.jpg" alt="color Splash portrait"
+                    onclick="openModal('images/color_splash.jpg', 'Colour Splash(A6)-2023', 'This drawing was made with colour pencils.<br> It was also made during the 20 to 1 Art Challenge.<br> The theme was “Colour Splash”, describing an artwork having both black and white and colourful elements into one piece.')">
+                <br>
+                <h4>Colour Splash(A6)-2023</h4>
+
+                <img src="images/eye.jpg" alt="eye zoom in"
+                    onclick="openModal('images/eye.jpg', 'Eye(A6)-2023', 'This is a drawing of an eye up close.<br> Drawn with pencils, this was also part the art challenge. The theme was “Zoom”')">
+                <br>
+                <h4>Eye(A6)-2023</h4>
+                <br>
+
+                <img src="images/hands.jpg" alt="holding hands"
+                    onclick="openModal('images/hands.jpg', 'Holding Hands(A6)-2022', 'Drawn with pencils, this drawing represents a couple holding hands. <br> Made from a picture of my husband and I.')">
+                <br>
+                <h4>Holding Hands(A6)-2022</h4>
+                <br>
+
+                <img src="images/kangaroo.jpg" alt=" zentangled kangaroo"
+                    onclick="openModal('images/kangaroo.jpg', 'Wild(A6)-2022', 'For the 20 to 1 Art Challenge by Ros Gervay, this is a drawing made with markers of a kangaroo.<br> The theme was “Wild”.')">
+                <br>
+                <h4>Wild(A6)-2022</h4>
+                <br>
+
+                <img src="images/bunny_cat_bubbletea.jpg" alt="cat and bunny arround a cup of bubble tea"
+                    onclick="openModal('images/bunny_cat_bubbletea.jpg', 'My Happiness(A6)-2022', 'Also, part of the art challenge, the theme was “Happiness”.<br> I drew a little white bunny and a cat holding unto a giant glass of bubble tea.<br> Those things represent a couple things that makes me happy. It has a secret meaning to it.')">
+                <br>
+                <h4>My Happiness(A6)-2022</h4>
+                <br>
+
+                <img src="images/elf.jpg" alt="elf with butterfly"
+                    onclick="openModal('images/elf.jpg', 'Elf(A6)-2022', 'From the art challenge, I drew a little elf holding a butterfly on top of her hand.')">
+                <br>
+                <h4>Elf(A6)-2022</h4>
+                <br>
+
+                <img src="images/koi_fish.jpg" alt="koi fish and lotus flower"
+                    onclick="openModal('images/koi_fish.jpg', 'Koi Fish(A6)-2022', 'The very first entry from the 20 to 1 Art Challenge hosted by Ros Gervay.<br> The drawing represents a koi fish arching the top of a circle, and a nymphae at the bottom of the circle.<br> The theme, as you might have guessed, was “Circle”.')">
+                <br>
+                <h4>Koi Fish(A6)-2022</h4>
+                <br>
+
+                <img src="images/fairy.jpg" alt="fairy"
+                    onclick="openModal('images/fairy.jpg', 'Dreamy Fairy(A4)-2017', 'Drawn in 2017, this was a concept drawing of a character for a client.<br> It is a beautiful fairy looking up, dreamy.')">
+                <br>
+                <h4>Dreamy Fairy(A4)-2017</h4>
+                <br>
+
+                <!-- Modal -->
+                <div id="myModal">
+                    <div id="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modal-img" src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="DTIYS/Fanart">
+                <h1>DTIYS/Fanart</h1>
+                <br>
+                <img src="images/fanart_contest.jpg" alt="Death and Wooly Apprentice"
+                    onclick="openModal('images/fanart_contest.jpg', 'Death and Apprentice(A6)-2023', 'Fanart contest entry for “Death and his apprentice celebrating Halloween”, hosted by Marengo Comics.<br> It is a drawing with colour pencils representing Death and Apprentice wearing respectively Gandalf and Frodo costumes to go trick-or-treat for Halloween.')">
+                <br>
+                <h4>Death and Apprentice(A6)-2023</h4>
+                <br>
+            </div>
+            <!-- Modal -->
+            <div id="myModal">
+                <div id="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img id="modal-img" src="" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Sweet Cheonsa Art &copy; 2023 - Cathelène Dechesne </p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

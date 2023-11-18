@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Sweet Cheonsa Art | Gallery</title>
+    <style>
+        /* Add some styling for the modal */
+        #myModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        #modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        #modal-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style the close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/angel_logo.png" alt="Sweet Cheonsa Art Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="aboutme.html">About Me</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="originals">
+                <!-- Add onclick attribute to each image to open the modal -->
+                <img src="images/cherry.jpg" alt="red cherry on green background"
+                    onclick="openModal('images/cherry.jpg', 'Cherry(A6)-2023', 'Cherry on a green background, drawn with colour pencils.<br>The purpose was to showcase the complementary colours red and green.<br>This drawing was made during the 20 to 1 Art Challenge hosted by the Sydney based artist Ros Gervay. The theme was “Complementary”.')">
+                <!-- Repeat the above line for each image -->
+
+                <!-- Modal -->
+                <div id="myModal">
+                    <div id="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modal-img" src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue with the rest of your content -->
+        </main>
+
+        <footer>
+            <p>Sweet Cheonsa Art &copy; 2023 - Cathelène Dechesne - WDD 130</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript code for image modal -->
+    <script>
+        // Function to open the modal with image and description
+        function openModal(imgSrc, imgAlt, description) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modal-img");
+            var modalContent = document.getElementById("modal-content");
+
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            modalImg.alt = imgAlt;
+            modalContent.innerHTML = "<span class='close' onclick='closeModal()'>&times;</span><img id='modal-img' src='" + imgSrc + "' alt='" + imgAlt + "'><h2>" + imgAlt + "</h2><p>" + description + "</p>";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
