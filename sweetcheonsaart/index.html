@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Sweet Cheonsa Art | Home</title>
 </head>
+
 <body>
     <div id="content">
         <header>
@@ -16,7 +18,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="aboutme.html">About Me</a>                
+                <a href="aboutme.html">About Me</a>
             </nav>
         </header>
         <div id="hero">
@@ -25,34 +27,44 @@
             </div>
             <section id="hero-msg">
                 <h1 class="home-title">“Art washes away from the soul the dust of everyday life.”</h1>
-                <h4>– Pablo Picasso</h4>                
+                <h4>– Pablo Picasso</h4>
             </section>
         </div>
         <main>
             <div class="gallery">
                 <h1>Recent Artwork:</h1>
-                <br>
-                <img src="images/fanart_contest.jpg" alt="Death and Wooly Apprentice"
-                    onclick="openModal('images/fanart_contest.jpg', 'Death and Apprentice(A6)-2023', 'Fanart contest entry for “Death and his apprentice celebrating Halloween”, hosted by Marengo Comics.<br> It is a drawing with colour pencils representing Death and Apprentice wearing respectively Gandalf and Frodo costumes to go trick-or-treat for Halloween.')">
-                <br>
-                <h4>Death and Apprentice(A6)-2023</h4>
-                
-                <img src="images/cherry.jpg" alt="red cherry on green background"
-                    onclick="openModal('images/cherry.jpg', 'Cherry(A6)-2023', 'Cherry on a green background, drawn with colour pencils.<br>The purpose was to showcase the complementary colours red and green.<br>This drawing was made during the 20 to 1 Art Challenge hosted by the Sydney based artist Ros Gervay. The theme was “Complementary”.')">
-                <br>
-                <h4>Cherry(A6)-2023</h4>
+                <figure>
+                    <a href="#modal-1">
+                        <img src="images/fanart_contest.jpg" class="image-width-class" alt="Death and Wooly Apprentice">
+                    </a>
+                    <figcaption>'Death and Apprentice(A6)-2023', 'Fanart contest entry for “Death and his apprentice
+                        celebrating Halloween”, hosted by Marengo Comics. It is a drawing with colour pencils
+                        representing Death and Apprentice wearing respectively Gandalf and Frodo costumes to go
+                        trick-or-treat for Halloween.'
+                    </figcaption>
+                </figure>
 
-                <img src="images/black_and_white.jpg" alt="resting face on black background"
-                    onclick="openModal('images/black_and_white.jpg', 'Resting face(A4)-2023', 'Drawn on blacker paper with white colour pencil and while pastel.<br> This was also created during the art challenge hosted by Ros Gervay.<br> The theme was “Black and White”')">
-                <br>
-                <h4>Resting face(A4)-2023</h4>
+                <figure>
+                    <a href="#modal-2">
+                        <img src="images/cherry.jpg" class="image-width-class" alt="red cherry on green background">
+                    </a>
+                    <figcaption>'Cherry(A6)-2023', 'Cherry on a green background, drawn with colour pencils. The
+                        purpose was to showcase the complementary colours red and green. This drawing was made during
+                        the 20 to 1 Art Challenge hosted by the Sydney based artist Ros Gervay. The theme was
+                        “Complementary”.'
+                    </figcaption>
+                </figure>
 
-                <div id="myModal">
-                    <div id="modal-content">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <img id="modal-img" src="" alt="">
-                    </div>
-                </div>
+                <figure>
+                    <a href="#modal-3">
+                        <img src="images/black_and_white.jpg" class="image-width-class"
+                            alt="resting face on black background">
+                    </a>
+                    <figcaption>'Resting face(A4)-2023', 'Drawn on blacker paper with white colour pencil and while
+                        pastel. This was also created during the art challenge hosted by Ros Gervay. The theme was
+                        “Black and White”.'
+                    </figcaption>
+                </figure>
 
                 <div class='button-box'>
                     <a class='gallery' href="gallery.html">Go to Gallery</a>
@@ -61,11 +73,13 @@
             <div class="aboutme">
                 <h1>Meet Sweet Cheonsa</h1>
                 <br>
-                <img class="about_me_synopsis"  src="images/sepia_drawing.jpg" alt="">
+                <img class="about_me_synopsis" src="images/sepia_drawing.jpg" alt="">
                 <br>
-                <p>A French artist who recently ventured to the vibrant country of Australia, weaving her creative journey across continents and emotions. <br>
-                   From her early discovery of a passion for drawing at the age of 10 to her unwavering love for music, <br>
-                   Sweet Cheonsa's artistic evolution is a captivating tapestry of inspiration and resilience.
+                <p>A French artist who recently ventured to the vibrant country of Australia, weaving her creative
+                    journey across continents and emotions. <br>
+                    From her early discovery of a passion for drawing at the age of 10 to her unwavering love for music,
+                    <br>
+                    Sweet Cheonsa's artistic evolution is a captivating tapestry of inspiration and resilience.
                 </p>
                 <div class='button-box'>
                     <a class='aboutme' href="aboutme.html">About Me</a>
@@ -75,14 +89,14 @@
                 <h2>Commission Message</h2>
                 <br>
                 <p>I am currently not taking commissions. Please stay tune!</p>
-            </div>                   
+            </div>
         </main>
         <footer>
             <p>Sweet Cheonsa Art &copy; 2023 - Cathelène Dechesne - WDD 130</p>
             <p><a href="site-plan.html">Site Plan</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">            
+                    <img src="images/facebook.png" alt="fb icon">
                 </a>
                 <a href="https://instagram.com" target="_blank">
                     <img src="images/instagram.png" alt="instagram icon">
@@ -90,5 +104,27 @@
             </div>
         </footer>
     </div>
+    <div id="modal-1" class="modal-window">
+        <div id="modal-content">
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <img src="images/fanart_contest.jpg" alt="full size image">
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal-window">
+        <div id="modal-content">
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <img src="images/cherry.jpg" alt="full size image">
+        </div>
+    </div>
+
+    <div id="modal-1" class="modal-window">
+        <div id="modal-content">
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <img src="images/black_and_white.jpg" alt="full size image">
+        </div>
+    </div>
+
 </body>
+
 </html>
