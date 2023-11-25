@@ -5,7 +5,7 @@ body{
     background-color:  #f8f4ef;
     font-size: 22px;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 #logo_link{
@@ -76,15 +76,15 @@ nav a:hover{
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 50 px 1fr 50px;
+    grid-template-columns: repeat(10, 1fr);    
     margin-top: 100px;
 }
 
-h1{
+.gallery-title{
     grid-column: 3/8;
     text-align: center;
     margin-bottom: 100px;
+    width: 100%;     
 }
 
 figure{
@@ -109,10 +109,16 @@ figure{
 
 .aboutme{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 50 px 1fr 50px;
+    grid-template-columns: repeat(10, 1fr);    
     margin-top: 100px;
     background: #D9CCC5;    
+}
+
+.about-title{
+    grid-column: 4/8;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;     
 }
 
 .about_me_synopsis{
@@ -126,26 +132,32 @@ figure{
 
 .commission{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 50 px 1fr 50px;   
+    grid-template-columns: repeat(10, 1fr);     
     background: #A6948A;  
 }
 
 .msg{
     grid-row: 1;
-    grid-column: 3/8;
+    grid-column: 2/10;
     text-align: center;
 }
 
 .msg-p{
     grid-row: 3;
     text-align: center;
-    grid-column: 3/8;
+    grid-column: 4/8;
+    margin-bottom: 50px;
 }
 
-.button-box{
+.button-box-gallery{
     grid-row: 3;
-    grid-column: 4/8;      
+    grid-column: 5/6;      
+}
+
+.button-box-about{
+    grid-row: 3;
+    grid-column: 5/ span 2;  
+    margin-bottom: 50px;    
 }
 
 .button {
@@ -186,6 +198,7 @@ figure{
     opacity: 1;
     right: 0;
   }
+
 .modal-window {
     position: fixed;
     background-color: rgba(55, 49, 49, 0.914);
@@ -257,7 +270,6 @@ img {
 *, *:before, *:after {
     box-sizing: border-box;
     }
-
 
     footer{
         background-color:#735448;
