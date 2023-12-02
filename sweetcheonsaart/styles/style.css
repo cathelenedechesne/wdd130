@@ -375,6 +375,7 @@ figure {
     display: grid;
     grid-template-columns: repeat(10, 1fr);    
     background: #FFFFFF;
+    margin-bottom: 100px;
 }
 
 #df-art{
