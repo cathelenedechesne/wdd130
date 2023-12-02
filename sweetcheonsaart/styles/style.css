@@ -1,48 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruluko&family=Vollkorn&display=swap');
 
-body{
-    font-family: Ruluko, Aria, sans-serif;
-    background-color:  #f8f4ef;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;    
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
-#logo_link{
+body {
+    font-family: Ruluko, Aria, sans-serif;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/***************************************************************************
+*
+*               Header Content
+*
+***************************************************************************/
+header {
+    background-color: #f8f4ef;
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+#logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
-
-header{
-    background-color:#f8f4ef;  
-    display: grid;
-    grid-template-columns: 300px auto;    
-}
-
 nav {
     display: flex;
     justify-content: space-around;
 }
-   
-nav a {    
+
+.nav-item {
     color: #735448;
     font-family: Vollkorn, Arial, sans-serif;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
     padding: 55px;
-    } 
+}
 
-nav a:hover{
-    background-color:#735448;
-    color: #f8f4ef;   
-}   
+.nav-item:hover {
+    background-color: #735448;
+    color: #f8f4ef;
+}
+
+
+/*************************************************************
+*
+*               Footer Begin
+*
+*************************************************************/
+
+footer {
+    background-color: #735448;
+    color: #f8f4ef;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #f8f4ef;
+}
+
+.footer-link:hover {
+    background-color: #f8f4ef;
+    color: #735448;
+    text-decoration: underline;
+}
+
+
+.social-img {
+    padding-top: 15px;
+}
+
+/*************************************************************
+*               Home Page Begin
+*
+*************************************************************/
 
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;     
+    margin-top: -100px;
 }
 
 #hero-box {
@@ -51,11 +106,11 @@ nav a:hover{
     z-index: -1;
 }
 
-#hero-img{
+#hero-img {
     width: 100%;
-} 
+}
 
-#hero-msg{
+#hero-msg {
     grid-column: 1/4;
     grid-row: 1/2;
     margin-top: 200px;
@@ -63,101 +118,128 @@ nav a:hover{
     margin-right: 200px;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1,
+#hero-msg h4 {
     font-family: Vollkorn, Arial, sans-serif;
     font-size: 45px;
-    text-align: right;    
-} 
+    text-align: right;
+}
 
-#content {
-    max-width: 1600px;
-    margin: 0 auto;    
-}  
 
-.gallery{
+
+.gallery {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);    
+    grid-template-columns: repeat(10, 1fr);
     margin-top: 100px;
 }
 
-.gallery-title{
-    grid-column: 3/8;
-    text-align: center;
-    margin-bottom: 100px;
-    width: 100%;     
-}
-
-figure{
-    grid-row: 2/3;    
-}
-
-#fanart-index{
-    grid-column: 2/3;
-    width: 100%;
-}
-
-#cherry-index{
-    grid-column: 4/6;
-    width: 100%;
-}
-
-#face-index{
-    grid-column: 7/9;
-    width: 100%;
-}
-
-
-.aboutme{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);    
-    margin-top: 100px;
-    background: #D9CCC5;    
-}
-
-.about-title{
+.gallery-title {
     grid-column: 4/8;
     text-align: center;
     margin-bottom: 100px;
-    width: 100%;     
+    width: 100%;
 }
 
-.about_me_synopsis{
+figure {
+    grid-row: 2/3;
+}
+
+#fanart-index {
+    grid-column: 2/4;
+    width: 100%;
+    justify-self: center;
+}
+
+#cherry-index {
+    grid-column: 5/7;
+    width: 100%;
+    justify-self: center;
+}
+
+#face-index {
+    grid-column: 8/10;
+    width: 100%;
+    justify-self: center;
+}
+
+
+.aboutme {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 100px;
+    background: #D9CCC5;
+}
+
+.about-title {
+    grid-column: 4/8;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.about-me-synopsis {
     grid-column: 2/5;
 }
 
-.synopsis{
+.synopsis {
     text-align: left;
     grid-column: 6/10;
 }
 
-.commission{
+.commission {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);     
-    background: #A6948A;  
+    grid-template-columns: repeat(10, 1fr);
+    background: #A6948A;
 }
 
-.msg{
+.msg {
     grid-row: 1;
     grid-column: 2/10;
     text-align: center;
 }
 
-.msg-p{
+.msg-p {
     grid-row: 3;
     text-align: center;
     grid-column: 4/8;
     margin-bottom: 50px;
 }
 
-.button-box-gallery{
+.button-box-gallery-button {
     grid-row: 3;
-    grid-column: 5/6;      
+    grid-column: 5/7;
+    justify-self: center;
+    border-radius: 4px;
+    background-color: #735448;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 50px;
 }
 
-.button-box-about{
+.button-box-about-aboutme {
     grid-row: 3;
-    grid-column: 5/ span 2;  
-    margin-bottom: 50px;    
+    grid-column: 4/8;    
+    border-radius: 4px;
+    background-color: #735448;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-self: center;
 }
 
 .button {
@@ -171,33 +253,145 @@ figure{
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;      
-  }
-  
-  .button span {
+    margin: 5px;
+}
+
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  .button span:after {
+}
+
+.button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  .button:hover span {
+}
+
+.button:hover span {
     padding-right: 25px;
-  }
-  
-  .button:hover span:after {
+}
+
+.button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
+
+/*************************************************************
+*               Gallery Page Begin
+*
+*************************************************************/
+
+.originals{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);    
+    margin-top: 100px;
+    background: #FFFFFF;
+}
+
+#og-art{
+    grid-column: 2/10;
+    text-align: center;
+    color: #735448;
+    margin-bottom: 100px;
+    width: 100%;    
+}
+
+#cherry-gallery {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+}
+
+#face-gallery{
+    grid-column: 5/7;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+}
+
+#color-splash{
+    grid-column: 8/10;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+}
+
+#eye{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    width: 100%;
+    justify-self: center;
+}
+
+#hands{
+    grid-column: 5/7;
+    grid-row: 3/4;
+    width: 100%;
+    justify-self: center;
+}
+
+#kangaroo{
+    grid-column: 8/10;
+    grid-row: 3/4;
+    width: 100%;
+    justify-self: center;
+}
+
+#bunny-cat{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    width: 100%;
+    justify-self: center;
+}
+
+#elf{
+    grid-column: 5/7;
+    grid-row: 4/5;
+    width: 100%;
+    justify-self: center;
+}
+
+#koi-fish{
+    grid-column: 8/10;
+    grid-row: 4/5;
+    width: 100%;
+    justify-self: center;
+}
+
+#fairy{
+    grid-column: 5/7;
+    grid-row: 5/6;
+    width: 100%;
+    justify-self: center;
+}
+
+.dtiys-fanart{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);    
+    background: #FFFFFF;
+}
+
+#df-art{
+    grid-column: 2/10;
+    text-align: center;
+    color: #735448;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+
+#fanart-gallery{
+    grid-column: 5/7;    
+    width: 100%;
+    justify-self: center;
+}
 
 .modal-window {
     position: fixed;
@@ -213,9 +407,6 @@ figure{
     transition: all 0.3s;
 }
 
-img {
-    max-width: 100%
-    }
 
 .modal-close {
     color: var(--primary-color);
@@ -229,7 +420,7 @@ img {
     text-decoration: none;
 }
 
-.modal-window > div,
+.modal-window>div,
 .modal-content {
     width: 1000px;
     position: absolute;
@@ -238,19 +429,23 @@ img {
     transform: translate(-50%, -50%);
     padding: 2em;
     display: grid;
-    grid-template-columns: 1fr 50px 1fr; /* Create a single column */
-    grid-template-rows: auto auto auto; /* Create three rows */
+    grid-template-columns: 1fr 50px 1fr;
+    /* Create a single column */
+    grid-template-rows: auto auto auto;
+    /* Create three rows */
     background: white;
 }
 
 .modal-content img {
     width: 100%;
-    grid-column: 1/2; /* Image spans the first column */
-    grid-row: 1;    /* Image is in the first row */
+    grid-column: 1/2;
+    /* Image spans the first column */
+    grid-row: 1;
+    /* Image is in the first row */
 }
 
 .modal-content h4 {
-    grid-column: 3/4; 
+    grid-column: 3/4;
     grid-row: 1/2;
     height: 20px
 }
@@ -258,7 +453,7 @@ img {
 .modal-content p {
     margin-top: 80px;
     grid-column: 3/4;
-    grid-row: 1/3; 
+    grid-row: 1/3;
 }
 
 .modal-window:target {
@@ -267,37 +462,29 @@ img {
     pointer-events: auto;
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
+@media screen and (max-width: 900px) {
+    #hero, #rivers_hero {
+        display: block;
+        height: auto;
     }
-
-    footer{
-        background-color:#735448;
-        color: #f8f4ef;    
-        padding: 25px 50px;        
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    nav, footer {
+        flex-direction: column;
     }
-    
-    footer a {
-        text-decoration: none;    
-        color:#f8f4ef;    
+    nav a {
+        display: block;
+        padding: 15px;
     }
-    
-    footer a:hover{
-        background-color: #f8f4ef;
-        color: #735448;
-    } 
-    
-    footer p {
-        font-size: 1.2em;
-    } 
-    
-    footer p a:hover {
-        text-decoration: underline;
-    }                   
-    
-    footer .social img{
-         padding-top: 15px;
+    #hero{
+        margin-top: 0;
     }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }   
+   
+    footer {
+        margin-top: 25px;
+    }
+}       
