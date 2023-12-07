@@ -183,6 +183,7 @@ figure {
 
 .synopsis {
     text-align: left;
+    font-family: Vollkorn, Arial, sans-serif;
     grid-column: 6/10;
 }
 
@@ -201,6 +202,7 @@ figure {
 .msg-p {
     grid-row: 3;
     text-align: center;
+    font-family: Vollkorn, Arial, sans-serif;
     grid-column: 4/8;
     margin-bottom: 50px;
 }
@@ -393,6 +395,54 @@ figure {
     width: 100%;
     justify-self: center;
 }
+
+/*************************************************************
+*               About Me Page Begin
+*
+*************************************************************/
+
+.about-me-page{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);    
+    margin-top: 100px;
+    background: #FFFFFF;
+}
+
+#ab-title{
+    grid-column: 2/10;
+    text-align: center;
+    color: #735448;
+    margin-bottom: 100px;
+    width: 100%; 
+}
+
+.ab-pic1 {
+    grid-column: 5/7;    
+    margin-bottom: 100px;
+    width: 100%;
+    justify-self: center;
+}
+
+#ab-text {
+    grid-column: 3/9;
+    text-align: left;
+    color: #735448;
+    font-family: Vollkorn, Arial, sans-serif;
+    margin-bottom: 100px;
+    width: 100%; 
+}
+
+.ab-pic2 {
+    grid-column: 3/9;    
+    margin-bottom: 100px;
+    width: 100%;
+    justify-self: center;
+}
+
+/*************************************************************
+*               Modal Begin
+*
+*************************************************************/
 
 .modal-window {
     position: fixed;
